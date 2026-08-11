@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SeasonFit | 계절·체형 기반 패션 추천</title>
-  <meta name="description" content="SeasonFit은 체형과 계절을 기반으로 패션 코디를 추천하는 서비스입니다.">
+
+  <!-- OAuth 앱 이름과 정확히 동일 -->
+  <title>SeasonFit</title>
+
+  <meta
+    name="description"
+    content="SeasonFit은 체형, 계절, 성별과 스타일 선호도를 기반으로 패션 코디와 사이즈를 추천하는 웹 서비스입니다."
+  >
+
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, "Noto Sans KR", sans-serif;
@@ -16,7 +24,7 @@
     }
 
     header {
-      padding: 80px 20px;
+      padding: 70px 20px 45px;
       text-align: center;
     }
 
@@ -37,16 +45,14 @@
     }
 
     section {
-      background: rgba(255,255,255,.92);
+      background: rgba(255,255,255,.95);
       margin-bottom: 18px;
       padding: 28px;
       border-radius: 20px;
       box-shadow: 0 10px 35px rgba(0,0,0,.06);
     }
 
-    h2 {
-      margin-top: 0;
-    }
+    h2 { margin-top: 0; }
 
     .features {
       display: grid;
@@ -78,12 +84,10 @@
       font-size: 14px;
     }
 
-    footer a {
-      color: #555;
-    }
+    footer a { color: #555; }
 
     @media (max-width: 600px) {
-      header { padding: 55px 20px; }
+      header { padding: 50px 20px 35px; }
       h1 { font-size: 36px; }
       .features { grid-template-columns: 1fr; }
       section { padding: 20px; }
@@ -92,22 +96,33 @@
 </head>
 
 <body>
+
 <header>
+  <!-- Google OAuth 앱 이름과 정확히 동일 -->
   <h1>SeasonFit</h1>
-  <div class="subtitle">계절과 체형에 맞는 나만의 패션 추천</div>
+
+  <p class="subtitle">
+    체형과 계절에 맞는 개인 맞춤 패션 추천 서비스
+  </p>
 </header>
 
 <main>
+
   <section>
-    <h2>SeasonFit 소개</h2>
+    <h2>SeasonFit이란?</h2>
+
     <p>
-      SeasonFit은 사용자의 체형 정보와 계절, 성별, 스타일 선호도를 바탕으로
-      어울리는 패션 코디를 추천하는 서비스입니다.
+      <strong>SeasonFit</strong>은 사용자가 입력한 키, 몸무게,
+      체형 정보와 성별, 계절, 스타일 선호도를 바탕으로
+      어울리는 패션 코디와 예상 의류 사이즈를 추천하는
+      개인 맞춤형 패션 추천 웹 서비스입니다.
     </p>
 
     <p>
-      다양한 국내·해외 패션 정보를 참고하여 계절별 코디와 상품 정보를
-      보다 편리하게 확인할 수 있도록 돕는 것을 목표로 합니다.
+      사용자는 봄·여름·가을·겨울에 맞는 코디를 확인하고,
+      추천된 의류 구성과 관련 상품 정보를 살펴볼 수 있습니다.
+      또한 코스프레 관련 패션 정보와 국내·해외 패션 트렌드 정보도
+      확인할 수 있습니다.
     </p>
   </section>
 
@@ -116,67 +131,88 @@
 
     <div class="features">
       <div class="feature">
-        <strong>👕 체형 기반 추천</strong><br>
-        키, 몸무게 및 추가 신체 정보를 바탕으로 적합한 사이즈와 코디를 추천합니다.
+        <strong>👕 체형 기반 패션 추천</strong><br>
+        키, 몸무게 및 추가 신체 정보를 이용해 적합한 사이즈와 코디를 추천합니다.
       </div>
 
       <div class="feature">
-        <strong>🌸 계절별 패션</strong><br>
+        <strong>🌸 계절별 코디</strong><br>
         봄·여름·가을·겨울에 맞는 패션 코디를 제공합니다.
       </div>
 
       <div class="feature">
         <strong>🛍 상품 정보</strong><br>
-        코디에 포함된 의류와 관련 상품 정보를 확인할 수 있습니다.
+        추천 코디와 관련된 상품, 가격 및 구매처 정보를 확인할 수 있습니다.
       </div>
 
       <div class="feature">
-        <strong>🎭 코스프레 추천</strong><br>
-        다양한 작품과 캐릭터를 기반으로 코스프레 정보를 찾아볼 수 있습니다.
+        <strong>🎭 코스프레 패션</strong><br>
+        작품과 캐릭터를 기반으로 코스프레 의상 정보를 확인할 수 있습니다.
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Google 계정 사용</h2>
+    <h2>Google 계정을 사용하는 이유</h2>
 
     <p>
-      SeasonFit에서 Google 로그인 기능을 사용하는 경우,
-      사용자를 식별하고 개인 설정을 제공하기 위해 필요한 최소한의
-      Google 계정 정보를 사용할 수 있습니다.
+      SeasonFit은 Google 로그인 기능을 사용하는 경우
+      사용자를 식별하고 사용자별 설정 및 개인화 기능을 제공하기 위해
+      Google 계정의 이메일 주소를 사용할 수 있습니다.
     </p>
 
     <p>
-      Google 계정 정보는 광고 판매를 목적으로 사용하지 않으며,
-      서비스 제공에 필요한 범위에서만 처리합니다.
+      서비스 운영을 위한 패션 데이터 수집 및 자동화 기능에서는
+      필요한 Google Apps Script 권한을 사용할 수 있습니다.
+      Google 사용자 데이터는 SeasonFit의 기능 제공을 위해 필요한
+      범위에서만 처리합니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>SeasonFit 이용하기</h2>
+
+    <p>
+      SeasonFit 패션 추천 웹앱을 통해 개인 맞춤 코디를 확인할 수 있습니다.
     </p>
 
-    <a class="button"
-       href="https://script.google.com/macros/s/AKfycbyWUCIIYAjQRkBfh5ayA-Iu2V9sS8FqJ-K5xr1OeNV_QtKA6V4gFgQvvrmBvc5VRMnt/exec">
+    <a
+      class="button"
+      href="https://script.google.com/macros/s/AKfycbyWUCIIYAjQRkBfh5ayA-Iu2V9sS8FqJ-K5xr1OeNV_QtKA6V4gFgQvvrmBvc5VRMnt/exec"
+    >
       SeasonFit 시작하기
     </a>
   </section>
 
   <section>
-    <h2>개인정보 보호</h2>
+    <h2>개인정보 및 서비스 정책</h2>
+
     <p>
-      SeasonFit은 서비스 운영에 필요한 최소한의 정보만 처리합니다.
-      자세한 내용은 아래 개인정보처리방침에서 확인할 수 있습니다.
+      SeasonFit의 개인정보 처리 방식과 서비스 이용 조건은
+      아래 문서에서 확인할 수 있습니다.
     </p>
 
-    <a href="./privacy.html">개인정보처리방침 보기</a>
+    <p>
+      <a href="./privacy.html">개인정보처리방침</a>
+      ·
+      <a href="./terms.html">서비스 이용약관</a>
+    </p>
   </section>
+
 </main>
 
 <footer>
   <div>© 2026 SeasonFit. All rights reserved.</div>
+
   <div>
-    문의: <strong>a682021494@gmail.com</strong>
+    문의:
+    <strong>a682021494@gmail.com</strong>
     ·
     <a href="./privacy.html">개인정보처리방침</a>
-·
-<a href="./terms.html">서비스 이용약관</a>
-</div>
+    ·
+    <a href="./terms.html">서비스 이용약관</a>
+  </div>
 </footer>
+
 </body>
 </html>
